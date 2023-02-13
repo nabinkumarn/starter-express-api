@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js --exec babel-node --presets babel-preset-env",
+    //"start": "nodemon index.js --exec babel-node --presets babel-preset-env",
+    "start": "node index.js"
     "lint": "eslint src/js",
     "build": "./node_modules/babel-cli/bin/babel.js index.js --out-dir lib --plugins transform-react-jsx --presets es2015",
     "bundle": "./node_modules/browserify/bin/cmd.js lib/client.js -o public/js/bundle.js"
